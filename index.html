@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Binary Flip Cards</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="shortcut icon" href="clo-emoji-favicon.jpg">
+</head>
+
+<body>
+    <!-- Binary Jumbotron -->
+    <div class="container-fluid">
+        <div class="jumbotron">
+            <div class="container-fluid">
+                <h1 class="text-center">Binary Flip Cards</h1>
+                <!-- Main content Row -->
+                <div class="row">
+                    <!-- Instructions container -->
+                    <div class="col-lg-12">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h2 class="panel-title text-center">Instructions</h2>
+                            </div>
+                            <div class="panel-body text-center">
+                                <p><small>Click on each card to Show the card when needed</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CARDS  -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2.3">
+                <div id="image" class="img-responsive">
+                    <div class="flip">
+                        <div class="card" id="image">
+                            <div class="face front">
+                                <div class="inner">
+                                    <img src="assets/images/oneDot.png">
+                                </div>
+                            </div>
+                            <div class="face back">
+                                <div class="inner text-center">
+                                    <h3>Do Not Count <br>
+                                  Click to Flip Back</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2.3">
+                <div id="image">
+                    <div class="flip">
+                        <div class="card" id="image">
+                            <div class="face front">
+                                <div class="inner">
+                                    <img src="assets/images/twoDots.png">
+                                </div>
+                            </div>
+                            <div class="face back">
+                                <div class="inner text-center">
+                                    <h3>Do Not Count <br>
+                                  Click to Flip Back</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2.3">
+                <div id="image">
+                    <div class="flip">
+                        <div class="card" id="image">
+                            <div class="face front">
+                                <div class="inner">
+                                    <img src="assets/images/fourDots.png">
+                                </div>
+                            </div>
+                            <div class="face back">
+                                <div class="inner text-center">
+                                    <h3>Do Not Count <br>
+                                  Click to Flip Back</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2.3">
+                <div id="image">
+                    <div class="flip">
+                        <div class="card" id="image">
+                            <div class="face front">
+                                <div class="inner">
+                                    <img src="assets/images/eightDots.png">
+                                </div>
+                            </div>
+                            <div class="face back">
+                                <div class="inner text-center">
+                                    <h3>Do Not Count <br>
+                                  Click to Flip Back</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2.3">
+                <div class="panel-body text-center img-fluid rounded">
+                    <div id="image">
+                        <div class="flip">
+                            <div class="card" id="image">
+                                <div class="face front">
+                                    <div class="inner">
+                                        <img src="assets/images/sixteenDots.png">
+                                    </div>
+                                </div>
+                                <div class="face back">
+                                    <div class="inner text-center">
+                                        <h3>Do Not Count <br>
+                                  Click to Flip Back</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Binary Input -->
+    <div class="row">
+        <!-- target score -->
+        <div class="col-lg-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h1 class="panel-title text-center">Base 2 (binary)</h1>
+                </div>
+                <div class="panel-body">
+                    <h1 class="text-center" id="binary">""</h1>
+                </div>
+            </div>
+        </div>
+        <!-- Base Ten -->
+        <div class="col-lg-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h1 class="panel-title text-center">Base 10 Number</h1>
+                </div>
+                <div class="panel-body">
+                    <h1 class="text-center" id="base10">""</h1>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+
+</html>
