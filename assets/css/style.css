@@ -19,9 +19,9 @@ body {
     width: auto;
     height: 225px;
     -webkit-transform-style: preserve-3d;
-    -webkit-transition: 0.5s;
+    -webkit-transition: 0.1s;
     transform-style: preserve-3d;
-    transition: 0.5s;
+    transition: 0.1s;
     background-color: #fff;
 }
 
